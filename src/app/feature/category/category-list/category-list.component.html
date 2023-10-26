@@ -11,15 +11,21 @@
         <thead>
             <tr>
                 <th>Id</th>
-                <th>CompanyId</th>
+                <th>companyId</th>
                 <th>CompanyName</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
             <tr *ngFor="let company of companies">
-                <td>{{company.id}}</td>
+                <td>{{company.Id}}</td>
                 <td>{{company.companyId}}</td>
                 <td>{{company.CompanyName}}</td>
+                <td>
+                    <a class="btn btn-light" [routerLink]="['/admin/categories',company.companyId]">
+                        Edit
+                    </a>
+                </td>
             </tr>
         </tbody>
     </table>

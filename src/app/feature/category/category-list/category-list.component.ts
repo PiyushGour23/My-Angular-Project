@@ -10,7 +10,6 @@ import { Observable } from 'rxjs';
 })
 export class CategoryListComponent implements OnInit {
 
-
   companies?: Company[];
   companies$?: Observable<Company[]>;
   constructor(private categoryservice: CategoryService){

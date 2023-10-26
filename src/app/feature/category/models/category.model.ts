@@ -1,5 +1,5 @@
 export interface Company{
-    id: number;
+    Id: number;
     companyId: number;
     CompanyName: string;
 }

@@ -19,4 +19,8 @@ export class CategoryService {
   getAllCompanies(): Observable<Company[]>{
     return this.http.get<Company[]>(`${environment.apibaseUrl}/api/Companies`)
   }
+
+  getCompanyById(companyId: string): Observable<Company>{
+    return this.http.get<Company>(`${environment.apibaseUrl}/api/Companies/${companyId}`);
+  }
 }
